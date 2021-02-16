@@ -1,5 +1,6 @@
 from geopandas import plotting as plot
 from matplotlib import pyplot as plt
+from rasterio.plot import show_hist #Plots and displays a particular raster that we will assign to it
 from rasterio.plot import show
 import geopandas as gpd
 import rasterstats
