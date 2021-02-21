@@ -18,6 +18,7 @@ show(rainFall) #This is to plot and show a single Raster as opened above
 """
 Creates a plotting axis and then plots on them
 Facecolor(Fill color) = 'None' when ploting .shps to only display bounds
+set edge color to sth distinct e.g 'Yellow'
 """
 def makePlot():
     fig, (ax1, ax2) = plt.subplots(1,2, figsize = (20,8))
