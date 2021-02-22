@@ -26,18 +26,19 @@ def makePlot():
     districts.plot(ax = ax1, facecolor = 'None', edgecolor = 'yellow')
     show_hist(rf, title = 'Histogram', ax = ax2)
     plt.show()
-    
+
 makePlot()
 
 # Assign raster values to a numpy nd array
 rainfall_array = rf.read(1)
 affine = rf.transform
 
-# Calculating the zonal statistics 
-avg_rf  = rasterstats.zonal_stats(
-    districts, rainfall_array, affine = affine,
-                                stats = ['mean'], 
-                                geojson_out = True)
+"""Calculating the zonal statistics """
+def calcZonalStats():
+    avg_rf  = rasterstats.zonal_stats(
+        districts, rainfall_array, affine = affine,
+                                    stats = ['mean'], 
+                                    geojson_out = True)
 
 # Extracting the average rainfall data from the list
 avg_rainfall = []
