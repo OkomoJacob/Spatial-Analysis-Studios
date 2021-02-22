@@ -40,14 +40,16 @@ def calcZonalStats():
                                     stats = ['mean'], 
                                     geojson_out = True)
 
-# Extracting the average rainfall data from the list
-avg_rainfall = []
-i = 0
+    # Extracting the average rainfall data from the list
+    avg_rainfall = []
+    i = 0
 
-while i < len(avg_rf):
-    avg_rainfall.append(avg_rf[i]['properties'])
-    i = i + 1 
+    while i < len(avg_rf):
+        avg_rainfall.append(avg_rf[i]['properties'])
+        i = i + 1 
 
-# Transfering the infromation from the list to a pandas DataFrame
-avg_rf_portugal = pd.DataFrame(avg_rainfall)
-print(avg_rf_portugal)
+    # Transfering the infromation from the list to a pandas DataFrame
+    avg_rf_portugal = pd.DataFrame(avg_rainfall)
+    print(avg_rf_portugal)
+
+calcZonalStats()
