@@ -41,7 +41,6 @@ def calcZonalStats():
     # Extracting the average rainfall data from the list
     avg_rainfall = []
     i = 0
-
     while i < len(avg_rf):
         avg_rainfall.append(avg_rf[i]['properties'])
         i = i + 1 
