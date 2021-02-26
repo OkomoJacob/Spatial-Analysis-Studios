@@ -27,8 +27,6 @@ def makePlot():
     show_hist(rf, title = 'Histogram', ax = ax2)
     plt.show()
 
-makePlot()
-
 # Assign raster values to a numpy nd array
 rainfall_array = rf.read(1)
 affine = rf.transform
