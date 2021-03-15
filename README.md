@@ -1,2 +1,5 @@
-# Spatial-Analysis-Studios
-All to do with spatial data analysis, Raster Image analysis
+## Spatial Data Analysis
+<hr>
+
+This is rep of small little things and practices to do with Spatial Data Analysis, Raster Data anlysis etc
+
