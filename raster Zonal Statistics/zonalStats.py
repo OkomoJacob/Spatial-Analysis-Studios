@@ -24,7 +24,6 @@ def makePlot():
 makePlot()
 # Assign raster values to a numpy nd array
 rainfall_array = rf.read(1)
-
 affine = rf.transform
 
 # Calculating the zonal statistics 
