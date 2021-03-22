@@ -36,7 +36,7 @@ affine = rf.transform
 def calcZonalStats():
     avg_rf  = zonal_stats(
         districts, rainfall_array, affine = affine,
-                                    stats = {['mean'], ['min'], ['max']}, 
+                                    stats = 'mean min max',
                                     geojson_out = True)
 
     # Extracting the average rainfall data from the list
