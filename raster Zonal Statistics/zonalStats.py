@@ -11,6 +11,9 @@ districts = gpd.read_file(r'./Districts/districts.shp')
 
 # Read the rainfall raster of 2020-04-15
 rf = rasterio.open(r'./Rainfall Data Rasters/2020-4-15.tif', mode = 'r')
+rainFall = rasterio.open('Rainfall Data Rasters/2020-4-3.tif', mode='r')
+# show(rainFall) This is to plot and show a single Raster as opened above
+
 
 # Plotting the raster and the districts shapefile together 
 fig, (ax1, ax2) = plt.subplots(1,2, figsize = (20,8))
