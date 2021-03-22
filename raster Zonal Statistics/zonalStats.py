@@ -1,6 +1,6 @@
 from matplotlib import pyplot as plt
 from rasterio.plot import show_hist
-from rasterio.plot import show
+from rasterio.plot import show #To plot raster alone
 import geopandas as gpd
 import pandas as pd
 import rasterstats
@@ -12,8 +12,7 @@ districts = gpd.read_file(r'./Districts/districts.shp')
 # Read the rainfall raster of 2020-04-15
 rf = rasterio.open(r'./Rainfall Data Rasters/2020-4-15.tif', mode = 'r')
 rainFall = rasterio.open('Rainfall Data Rasters/2020-4-3.tif', mode='r')
-# show(rainFall) This is to plot and show a single Raster as opened above
-
+show(rainFall) #This is to plot and show a single Raster as opened above
 
 # Plotting the raster and the districts shapefile together 
 fig, (ax1, ax2) = plt.subplots(1,2, figsize = (20,8))
