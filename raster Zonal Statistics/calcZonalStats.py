@@ -50,6 +50,6 @@ def calcZonalStats():
     avg_rf_portugal = pd.DataFrame(avg_rainfall)
     print(avg_rf_portugal)
 
+    avg_rf_portugal.plot(x = 'NAME_1', y = 'mean', kind = 'line')    
 makePlot()
 calcZonalStats()
-
