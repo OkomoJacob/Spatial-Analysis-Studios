@@ -26,6 +26,7 @@ def makePlot():
     districts.plot(ax = ax1, facecolor = 'None', edgecolor = 'yellow')
     show_hist(rf, title = 'Histogram', ax = ax2)
     plt.show()
+    
 makePlot()
 
 # Assign raster values to a numpy nd array
