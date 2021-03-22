@@ -15,12 +15,13 @@ rainFall = rasterio.open('Rainfall Data Rasters/2020-4-3.tif', mode='r')
 show(rainFall) #This is to plot and show a single Raster as opened above
 
 # Plotting the raster and the districts shapefile together 
-fig, (ax1, ax2) = plt.subplots(1,2, figsize = (20,8))
-show(rf, ax = ax1, title = 'Rainfall')
-districts.plot(ax = ax1, facecolor = 'None', edgecolor = 'yellow')
-show_hist(rf, title = 'Histogram', ax = ax2)
-plt.show()
-
+def plot():
+    fig, (ax1, ax2) = plt.subplots(1,2, figsize = (20,8))
+    show(rf, ax = ax1, title = 'Rainfall')
+    districts.plot(ax = ax1, facecolor = 'None', edgecolor = 'yellow')
+    show_hist(rf, title = 'Histogram', ax = ax2)
+    plt.show()
+plot()
 # Assign raster values to a numpy nd array
 rainfall_array = rf.read(1)
 
