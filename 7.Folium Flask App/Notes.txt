@@ -1,0 +1,11 @@
+A very common use case is to use folium with flask app.
+The trick is to return folium's HTML5 representation
+
+Required pacckages:
+flask :A python based web framework to easily deploy our folium app
+folium :A visualization package in python
+
+Start the flask server in the CLI:
+    $ python p.py 
+    then in the browser 127.0.0.1:5000
+
