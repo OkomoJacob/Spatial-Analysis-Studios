@@ -41,3 +41,7 @@ gdalwarp -t_srs EPSG:28992 srtm_37_02.tif dem_rd.tif <ENTER>
 * More gdal commands can be found [here](https://gdal.org/drivers/raster/index.html)
 
 ### Batch conversion
+
+Desktop GIS programmes are very useful for GIS operations, but are hard to use if we have to repeat the same task for many GIS layers. Then scripting can be a solution.
+
+Here I have an example dataset from a land-use model of Dublin. The data are in IDRISI raster format (.rst), with one layer for each year between 1990 and 2030. Our task is to convert all layers to GeoTiff (.tif )format.
