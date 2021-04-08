@@ -1,0 +1,48 @@
+file format : IDRISI Raster A.1
+file title  : Land use map
+data type   : byte
+file type   : binary
+columns     : 210
+rows        : 200
+ref. system : plane
+ref. units  : m
+unit dist.  : 1
+min. X      : 288449
+max. X      : 330449
+min. Y      : 215424
+max. Y      : 255424
+pos'n error : unknown
+resolution  : 200
+min. value  : 0
+max. value  : 22
+display min : 0
+display max : 22
+value units : unspecified
+value error : unknown
+flag value  : none
+flag def'n  : none
+legend cats : 24
+code      0 : Arable land
+code      1 : Pastures
+code      2 : Heterogeneous agricultural areas
+code      3 : Forests
+code      4 : Semi-natural areas
+code      5 : Wetlands
+code      6 : Abandoned
+code      7 : Residential continuous dense urban fabric
+code      8 : Residential continuous medium dense urban fabric
+code      9 : Residential discontinuous urban fabric
+code     10 : Residential discontinuous sparse urban fabric
+code     11 : Industrial areas
+code     12 : Commercial areas
+code     13 : Public and private services
+code     14 : Port areas
+code     15 : Construction sites
+code     16 : Road and rail networks and associated land
+code     17 : Airport
+code     18 : Mineral extraction sites
+code     19 : Dump sites
+code     20 : Artificial non-agricultural vegetated areas
+code     21 : Restricted access areas
+code     22 : Water bodies
+code     23 : Outside area
