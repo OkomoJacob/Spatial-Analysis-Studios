@@ -18,3 +18,22 @@ One of the easiest and most useful commands in GDAL is [gdalinfo](https://gdal.o
 ### Retrieve Information from Vector Data
 For retrieving info from vector data we use the [ogrinfo](https://gdal.org/programs/ogrinfo.html) command.
 
+* command `ogrinfo -al roads.shp`
+### Reproject Raster Data
+GDAL has the capability to change a raster coordinate system using the following syntax:
+
+gdalwarp -t_srs EPSG:... <input> <output>
+
+The -t_srs argument specifies the target coordinate system. If the source coordinate system is unknown it must be specified with the -s_srs argument. EPSG:... specifies the EPSG code of the projection. <input> and <output> are the input and output data respectively.
+
+We are now going to reproject a Digital Elevation Model (DEM) acquired by the Shuttle Radar Topography Mission (SRTM). You can  download DEM's for your own area of interest from USGS Earth Explorer. Here we'll use the provided course data.
+
+In order to reproject the DEM from WGS-84 lat/lon to Amersfoort/RD New we use this command:
+
+gdalwarp -t_srs EPSG:XXXXX srtm_37_02.tif dem_rd.tif
+
+1. Replace XXXXX with the proper EPSG code for Amersfoort/RD New (see one of your previous answers using ogrinfo).
+
+2. Execute the command:
+
+gdalwarp -t_srs EPSG:28992 srtm_37_02.tif dem_rd.tif <ENTER>
