@@ -14,6 +14,7 @@ gdal allows you to perform many spatial queries viz.,
 ### Retrieving Information from Raster Data
 One of the easiest and most useful commands in GDAL is [gdalinfo](https://gdal.org/programs/gdalinfo.html). When given an image as an argument, it retrieves and prints all relevant information that is known about the file. This is especially useful if the image contains additional tag data, as is the case with TIFF files. When working with satellite imagery, this is an extremely useful way of keeping track of the images location in long/lat coordinates as well as the image projection.
 
+* command `gdalinfo file.tif`
 ### Retrieve Information from Vector Data
 For retrieving info from vector data we use the [ogrinfo](https://gdal.org/programs/ogrinfo.html) command.
 
