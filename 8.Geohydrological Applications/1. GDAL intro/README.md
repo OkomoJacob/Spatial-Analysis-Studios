@@ -39,3 +39,5 @@ gdalwarp -t_srs EPSG:XXXXX srtm_37_02.tif dem_rd.tif
 gdalwarp -t_srs EPSG:28992 srtm_37_02.tif dem_rd.tif <ENTER>
 
 * More gdal commands can be found [here](https://gdal.org/drivers/raster/index.html)
+
+### Batch conversion
