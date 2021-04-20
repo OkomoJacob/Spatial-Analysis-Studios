@@ -48,5 +48,9 @@ Here I have an example dataset from a land-use model of Dublin. The data are in 
 
 ```python
 
-for i in range 4:
+for %%f in (*.rst) do (
+   echo %%~nf
+   gdal_translate -of GTiff %%f %%~nf.tif
+)
+
 ```
