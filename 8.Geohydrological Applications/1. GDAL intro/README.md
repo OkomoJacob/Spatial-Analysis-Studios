@@ -10,6 +10,8 @@ gdal allows you to perform many spatial queries viz.,
    * Apply spatial queries on vectors
    * Convert comma separated values files
    * Perform batch conversion, inter alia
+### Data for this repo
+Here is a direct [link](https://ocw.un-ihe.org/pluginfile.php/868/mod_resource/content/2/Preprocessing/gdal_exercises.zip) to the data.Click once to downloa in your downloads folder as `gdal_exercises.zip`. Extarct to learn more
 
 ### Retrieving Information from Raster Data
 One of the easiest and most useful commands in GDAL is [gdalinfo](https://gdal.org/programs/gdalinfo.html). When given an image as an argument, it retrieves and prints all relevant information that is known about the file. This is especially useful if the image contains additional tag data, as is the case with TIFF files. When working with satellite imagery, this is an extremely useful way of keeping track of the images location in long/lat coordinates as well as the image projection.
@@ -26,8 +28,7 @@ gdalwarp -t_srs EPSG:... <input> <output>
 
 The -t_srs argument specifies the target coordinate system. If the source coordinate system is unknown it must be specified with the -s_srs argument. EPSG:... specifies the EPSG code of the projection. <input> and <output> are the input and output data respectively.
 
-We are now going to reproject a Digital Elevation Model (DEM) acquired by the Shuttle Radar Topography Mission (SRTM). You can  download DEM's for your own area of interest from USGS Earth Explorer. Here we'll use the provided course data.
-
+We are now going to reproject a Digital Elevation Model (DEM) acquired by the Shuttle Radar Topography Mission (SRTM). You can  download DEM's for your own area of interest from USGS Earth Explorer.
 In order to reproject the DEM from WGS-84 lat/lon to Amersfoort/RD New we use this command:
 
 gdalwarp -t_srs EPSG:XXXXX srtm_37_02.tif dem_rd.tif
