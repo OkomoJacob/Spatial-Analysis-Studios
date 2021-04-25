@@ -1,0 +1,10 @@
+  pcraster
+  python=3.7
+  gdal
+  jupyter
+  xlrd
+  pandas-datareader
+  numexpr
+  scikit-learn
+  pycrs
+  matplotlib
