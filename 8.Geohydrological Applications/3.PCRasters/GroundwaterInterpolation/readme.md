@@ -11,3 +11,4 @@ in the data dir:
 * `aguila clone.map` to plot the clonemap using aguila
 * `col2map` to view the parameters
 * `col2map -S -x 2 -y 3 -v 1 boreholesdxy.csv boreholedepth.map --clone clone.map` to explicitly view the data --all 
+* `aguila boreholedepth.map` to view the borehole map
