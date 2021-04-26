@@ -1,3 +1,4 @@
-## Lecture Notes
+## Lecture Notes and resources
 
-[Video Tutorial](https://www.youtube.com/watch?v=qrq_mOxb7ck&t=1s)
+
+1. [Ground Water Interpolation Video Tutorial](https://www.youtube.com/watch?v=qrq_mOxb7ck&t=1s)
