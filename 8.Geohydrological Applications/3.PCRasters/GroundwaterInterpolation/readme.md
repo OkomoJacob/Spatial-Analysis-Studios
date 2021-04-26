@@ -1,3 +1,15 @@
-## Lecture Notes
+## Lecture Notes and resources
 
-[Video Tutorial](https://www.youtube.com/watch?v=qrq_mOxb7ck&t=1s)
+
+1. [Ground Water Interpolation Video Tutorial](https://www.youtube.com/watch?v=qrq_mOxb7ck&t=1s)
+
+## Spatial Commands to convert the CSV into a PCRaster formart
+
+in the data dir: 
+
+* `conda activate condaPySpatial` to activate the condaVenv
+* `mapattr -p clone.map` to read the clone-map attributes
+* `aguila clone.map` to plot the clonemap using aguila
+* `col2map` to view the parameters
+* `col2map -S -x 2 -y 3 -v 1 boreholesdxy.csv boreholedepth.map --clone clone.map` to explicitly view the data --all 
+* `aguila boreholedepth.map` to view the borehole map
