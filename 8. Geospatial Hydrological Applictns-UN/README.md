@@ -1,4 +1,5 @@
 # Material Contents and Main Objectives
+<hr >
 
  * Manage files and folders using the command line
  * Use GDAL from the command line to convert GIS formats and reproject GIS files
